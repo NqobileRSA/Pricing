@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Service Pricing</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Arial", sans-serif;
+      }
+
+      body {
+        padding: 20px;
+        background: #f5f5f5;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .section {
+        margin-bottom: 40px;
+        background: white;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .section-title {
+        color: #333;
+        font-size: 24px;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #eee;
+      }
+
+      .pricing-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+      }
+
+      .pricing-card {
+        background: white;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 20px;
+        transition: transform 0.3s ease;
+      }
+
+      .pricing-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .card-title {
+        font-size: 20px;
+        color: #333;
+        margin-bottom: 10px;
+      }
+
+      .price {
+        font-size: 24px;
+        color: #2c5282;
+        margin-bottom: 20px;
+        font-weight: bold;
+      }
+
+      .feature-list {
+        list-style: none;
+      }
+
+      .feature-list li {
+        margin-bottom: 10px;
+        padding-left: 20px;
+        position: relative;
+      }
+
+      .feature-list li::before {
+        content: "•";
+        color: #2c5282;
+        position: absolute;
+        left: 0;
+      }
+
+      .additional-info {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .info-block {
+        padding: 15px;
+      }
+
+      .info-title {
+        font-size: 18px;
+        color: #333;
+        margin-bottom: 10px;
+      }
+
+      @media (max-width: 768px) {
+        .pricing-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .section {
+          padding: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Web Design & UI/UX Section -->
+      <div class="section">
+        <h2 class="section-title">Web Design & UI/UX</h2>
+        <div class="pricing-grid">
+          <div class="pricing-card">
+            <h3 class="card-title">Basic Design</h3>
+            <p class="price">R4,000 - R6,000</p>
+            <ul class="feature-list">
+              <li>Wireframes</li>
+              <li>Responsive design</li>
+              <li>Up to 5 page designs</li>
+              <li>2 revision rounds</li>
+              <li>Basic UI components</li>
+            </ul>
+          </div>
+          <div class="pricing-card">
+            <h3 class="card-title">Professional Design</h3>
+            <p class="price">R6,000 - R8,000</p>
+            <ul class="feature-list">
+              <li>Custom UI/UX research</li>
+              <li>User flow mapping</li>
+              <li>Design system creation</li>
+              <li>Unlimited pages</li>
+              <li>3 revision rounds</li>
+              <li>Interactive prototypes</li>
+            </ul>
+          </div>
+          <div class="pricing-card">
+            <h3 class="card-title">Premium Design</h3>
+            <p class="price">R8,000 - R12,000</p>
+            <ul class="feature-list">
+              <li>Everything in Professional</li>
+              <li>Brand identity integration</li>
+              <li>Custom animations</li>
+              <li>Micro-interactions</li>
+              <li>A/B testing designs</li>
+              <li>User testing sessions</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Web Development Section -->
+      <div class="section">
+        <h2 class="section-title">Web Development</h2>
+        <div class="pricing-grid">
+          <div class="pricing-card">
+            <h3 class="card-title">Basic Website</h3>
+            <p class="price">R5,000 - R8,000</p>
+            <ul class="feature-list">
+              <li>Next.js development</li>
+              <li>Up to 5 pages</li>
+              <li>Contact form</li>
+              <li>Basic SEO setup</li>
+              <li>Mobile responsive</li>
+              <li>1 month support</li>
+            </ul>
+          </div>
+          <div class="pricing-card">
+            <h3 class="card-title">Professional Website</h3>
+            <p class="price">R8,000 - R12,000</p>
+            <ul class="feature-list">
+              <li>Up to 10 pages</li>
+              <li>Content Management System</li>
+              <li>Advanced forms</li>
+              <li>API integrations</li>
+              <li>Image optimization</li>
+              <li>3 months support</li>
+            </ul>
+          </div>
+          <div class="pricing-card">
+            <h3 class="card-title">Advanced Website</h3>
+            <p class="price">R12,000 - R18,000</p>
+            <ul class="feature-list">
+              <li>Unlimited pages</li>
+              <li>Custom features</li>
+              <li>Database integration</li>
+              <li>User authentication</li>
+              <li>Admin dashboard</li>
+              <li>6 months support</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- E-commerce Section -->
+      <div class="section">
+        <h2 class="section-title">E-commerce</h2>
+        <div class="pricing-grid">
+          <div class="pricing-card">
+            <h3 class="card-title">Basic Store</h3>
+            <p class="price">R10,000 - R15,000</p>
+            <ul class="feature-list">
+              <li>Up to 50 products</li>
+              <li>Basic payment integration</li>
+              <li>Order management</li>
+              <li>Basic inventory</li>
+              <li>2 months support</li>
+            </ul>
+          </div>
+          <div class="pricing-card">
+            <h3 class="card-title">Professional Store</h3>
+            <p class="price">R15,000 - R20,000</p>
+            <ul class="feature-list">
+              <li>Up to 200 products</li>
+              <li>Multiple payment gateways</li>
+              <li>Inventory management</li>
+              <li>Order tracking</li>
+              <li>Customer accounts</li>
+              <li>3 months support</li>
+            </ul>
+          </div>
+          <div class="pricing-card">
+            <h3 class="card-title">Advanced Store</h3>
+            <p class="price">R20,000 - R30,000</p>
+            <ul class="feature-list">
+              <li>Unlimited products</li>
+              <li>Multiple currencies</li>
+              <li>Advanced analytics</li>
+              <li>Loyalty system</li>
+              <li>Custom features</li>
+              <li>6 months support</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- SEO Services Section -->
+      <div class="section">
+        <h2 class="section-title">SEO Services</h2>
+        <div class="pricing-grid">
+          <div class="pricing-card">
+            <h3 class="card-title">Basic SEO</h3>
+            <p class="price">R3,500 - R5,000</p>
+            <ul class="feature-list">
+              <li>On-page optimization</li>
+              <li>Meta descriptions</li>
+              <li>Basic keyword research</li>
+              <li>Google My Business setup</li>
+              <li>Monthly report</li>
+            </ul>
+          </div>
+          <div class="pricing-card">
+            <h3 class="card-title">Professional SEO</h3>
+            <p class="price">R5,000 - R8,000</p>
+            <ul class="feature-list">
+              <li>Everything in Basic plus</li>
+              <li>Content optimization</li>
+              <li>Technical SEO</li>
+              <li>Backlink strategy</li>
+              <li>Bi-weekly reports</li>
+            </ul>
+          </div>
+          <div class="pricing-card">
+            <h3 class="card-title">Advanced SEO</h3>
+            <p class="price">R8,000 - R12,000</p>
+            <ul class="feature-list">
+              <li>Everything in Professional plus</li>
+              <li>Content creation</li>
+              <li>Local SEO</li>
+              <li>E-commerce SEO</li>
+              <li>Weekly reports</li>
+              <li>ROI tracking</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Additional Information -->
+      <div class="additional-info">
+        <div class="info-block">
+          <h3 class="info-title">Package Discounts</h3>
+          <ul class="feature-list">
+            <li>10% off for 3+ services</li>
+            <li>5% off for 6+ month contracts</li>
+          </ul>
+        </div>
+        <div class="info-block">
+          <h3 class="info-title">Maintenance Plans</h3>
+          <ul class="feature-list">
+            <li>Basic: R500/month</li>
+            <li>Professional: R1,000/month</li>
+            <li>Premium: R2,000/month</li>
+          </ul>
+        </div>
+        <div class="info-block">
+          <h3 class="info-title">Payment Terms</h3>
+          <ul class="feature-list">
+            <li>40% deposit</li>
+            <li>30% at project midpoint</li>
+            <li>30% upon completion</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
